@@ -6,14 +6,14 @@ Site de test des maquettes de jeux, publié avec GitHub Pages.
 
 | Dossier | Jeu | Statut |
 |---|---|---|
-| `pixel-invaders/` | Pixel Invaders : rétro arcade + Défis Nature street art (caractéristiques : carreaux, taille, points, année) | jouable |
+| `pixel-invaders/` | Invasion Invaders Pixel : rétro arcade + Défis Nature street art (caractéristiques : carreaux, taille, points, année) | jouable |
 
 ## Pages du site
 
 | Page | Contenu |
 |---|---|
 | `index.html` | Accueil : liste des maquettes |
-| `notice.html` | Mode d'emploi de Pixel Invaders |
+| `notice.html` | Mode d'emploi de Invasion Invaders Pixel |
 | `evolutions.html` | Historique des versions |
 | `confidentialite.html` | Politique de confidentialité |
 | `conditions.html` | Conditions d'utilisation et mentions légales |
@@ -31,7 +31,7 @@ Maquettes de fan non officielles, sans lien avec l'artiste Invader ni avec l'app
 
 ## Mise à jour automatique de la base
 
-À l'ouverture (au plus une fois toutes les 12 h), Pixel Invaders vérifie sur GitHub si le dépôt [goguelnikov/SpaceInvaders](https://github.com/goguelnikov/SpaceInvaders) contient une version plus récente (V07, V08…) ou une version modifiée. Si oui, elle est **téléchargée et appliquée automatiquement**, sans recharger la page ; un message résume les changements. Hors connexion, la dernière base connue est utilisée. Le bouton « 🔄 Vérifier maintenant » force la vérification.
+À l'ouverture (au plus une fois toutes les 12 h), Invasion Invaders Pixel vérifie sur GitHub si le dépôt [goguelnikov/SpaceInvaders](https://github.com/goguelnikov/SpaceInvaders) contient une version plus récente (V07, V08…) ou une version modifiée. Si oui, elle est **téléchargée et appliquée automatiquement**, sans recharger la page ; un message résume les changements. Hors connexion, la dernière base connue est utilisée. Le bouton « 🔄 Vérifier maintenant » force la vérification.
 
 Le bouton **📜 Historique des mises à jour** (menu et en-tête) liste chaque version : date, invaders ajoutés par ville, nouvelles villes, changements d'état (ex. OK → Détruit), invaders retirés et positions corrigées. L'historique est prérempli avec les versions V01 à V06 du dépôt.
 
