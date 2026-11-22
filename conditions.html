@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07060f"><title>Conditions d'utilisation – Oz · Maquettes de jeux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07060f;--panel:#120f24;--panel2:#1b1736;--neon:#39ff88;--pink:#ff3df0;--cyan:#29e7ff;--yellow:#ffe83d;--txt:#e8e6ff;--dim:#a29dcc;--pix:'Press Start 2P',monospace;--mono:'VT323',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:var(--mono);font-size:21px;line-height:1.35;min-height:100vh}
+.crt{position:fixed;inset:0;pointer-events:none;z-index:5;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px)}
+header.top{position:sticky;top:0;z-index:4;background:rgba(7,6,15,.95);border-bottom:2px solid var(--panel2)}
+.bar{max-width:1050px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:space-between}
+.brand{font-family:var(--pix);font-size:13px;color:var(--neon);text-decoration:none;text-shadow:0 0 8px var(--neon),3px 3px 0 var(--pink)}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{font-family:var(--pix);font-size:9px;color:var(--dim);text-decoration:none;padding:7px 8px;border:2px solid transparent}
+nav a:hover{color:var(--txt);border-color:var(--panel2)}
+nav a.on{color:#000;background:var(--yellow)}
+main{max-width:900px;margin:0 auto;padding:26px 16px 50px;position:relative;z-index:1}
+main.wide{max-width:1050px}
+h1{font-family:var(--pix);font-size:clamp(16px,3.6vw,26px);line-height:1.5;color:var(--neon);text-shadow:0 0 10px var(--neon),3px 3px 0 var(--pink);margin-bottom:8px}
+.sub{color:var(--cyan);margin-bottom:22px}
+h2{font-family:var(--pix);font-size:13px;line-height:1.6;color:var(--yellow);margin:28px 0 10px}
+h3{font-family:var(--pix);font-size:10px;line-height:1.6;color:var(--cyan);margin:18px 0 6px}
+p{margin:8px 0}
+ul,ol{margin:8px 0 8px 26px}li{margin:4px 0}
+a{color:var(--cyan)}
+b,strong{color:#fff}
+.box{background:var(--panel);border:2px solid var(--panel2);padding:14px 16px;margin:14px 0}
+.box.ok{border-color:var(--neon)}.box.warn{border-color:var(--yellow)}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:19px}
+th,td{border:1px solid var(--panel2);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--panel2);font-family:var(--pix);font-size:9px;color:var(--yellow)}
+.toc{columns:2;column-gap:24px}
+.ver{border-left:4px solid var(--neon);padding:4px 0 4px 14px;margin:18px 0}
+.ver .d{font-family:var(--pix);font-size:9px;color:var(--dim)}
+.tag{font-family:var(--pix);font-size:8px;padding:3px 5px;margin-right:4px;color:#000;background:var(--neon)}
+.tag.f{background:var(--cyan)}.tag.c{background:var(--yellow)}.tag.r{background:var(--pink)}
+footer.bot{border-top:2px solid var(--panel2);text-align:center;padding:18px 12px 28px;color:var(--dim);font-size:17px;position:relative;z-index:1}
+footer.bot a{color:var(--dim);margin:0 6px}
+@media (max-width:620px){.toc{columns:1}nav a{font-size:8px;padding:6px}}
+</style></head><body><div class="crt"></div>
+<header class="top"><div class="bar"><a class="brand" href="index.html">OZ · MAQUETTES</a><nav><a href="index.html">Accueil</a><a href="notice.html">Notice</a><a href="evolutions.html">Évolutions</a><a href="confidentialite.html">Confidentialité</a><a href="conditions.html" class="on">Conditions d'utilisation</a></nav></div></header>
+<main>
+<h1>CONDITIONS D'UTILISATION</h1><p class="sub">Mise à jour le 22 novembre 2026</p>
+
+<h2>1. OBJET</h2>
+<p>Ce site présente des maquettes de jeux, dont <b>Pixel Invaders</b>, un jeu gratuit inspiré de la chasse aux invaders. En utilisant le site, tu acceptes les présentes conditions.</p>
+
+<h2>2. PROJET DE FAN NON OFFICIEL</h2>
+<div class="box warn">Pixel Invaders est une <b>maquette de fan non officielle</b>. Elle n'est ni produite, ni approuvée, ni soutenue par l'artiste Invader, l'application Flash Invaders ou l'application Findvaders, et n'a aucun lien avec eux. Les noms cités le sont uniquement pour désigner leurs auteurs.</div>
+
+<h2>3. CONTENUS ET DONNÉES</h2>
+<ul><li><b>Œuvres</b> : le jeu ne reproduit pas les mosaïques de l'artiste. Les cartes sont illustrées par des mosaïques générées par le jeu, ou par les vignettes de ta propre galerie, affichées uniquement sur ton appareil.</li>
+<li><b>Données des invaders</b> : codes, villes, points, états et positions proviennent de la <a href="https://github.com/goguelnikov/SpaceInvaders" target="_blank" rel="noopener">Space Invaders World Database</a> (licence MIT, © goguelnikov). Elles sont fournies par la communauté, sans garantie d'exactitude. Les carreaux, tailles et années affichés sont des <b>estimations</b>.</li>
+<li><b>Tes vignettes</b> sont réservées à ton usage personnel : ne les rediffuse pas.</li>
+<li>Le code et le design du jeu appartiennent à leur auteur (Oz-WEB).</li></ul>
+
+<h2>4. CHASSER LES INVADERS AVEC RESPECT</h2>
+<ul><li>Ne dégrade, ne décolle et ne déplace jamais une mosaïque.</li>
+<li>Respecte les propriétés privées, les riverains et le code de la route.</li>
+<li>Reste attentif à ta sécurité : ne regarde pas ton écran en traversant.</li>
+<li>Les positions affichées sont approximatives.</li></ul>
+
+<h2>5. UTILISATION DU SITE</h2>
+<p>Le site est fourni gratuitement, « en l'état », sans garantie de disponibilité ni d'absence d'erreur. Il s'agit de maquettes en cours de test : des fonctions peuvent changer ou disparaître. L'éditeur ne peut être tenu responsable d'une perte de données stockées dans ton navigateur ; pense à garder une copie de ta liste de flashs.</p>
+<p>Les signalements envoyés à l'auteur de la base doivent être sincères : ne signale que ce que tu as réellement constaté.</p>
+
+<h2>6. LIENS EXTERNES</h2>
+<p>Les liens vers d'autres sites (Google Maps, OpenStreetMap, Instagram, Flickr, invader-spotter, GitHub) sont fournis pour information ; leurs contenus relèvent de leurs éditeurs.</p>
+
+<h2>7. MENTIONS LÉGALES</h2>
+<table><tr><th>Éditeur</th><td>Oz-WEB – Christophe VIDAL, particulier, Paris (France) · <a href="mailto:ozvitrine@gmail.com">ozvitrine@gmail.com</a></td></tr>
+<tr><th>Hébergeur</th><td>GitHub, Inc. (GitHub Pages) – 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</td></tr></table>
+
+<h2>8. MODIFICATIONS ET DROIT APPLICABLE</h2>
+<p>Ces conditions peuvent être modifiées à tout moment ; la date de mise à jour figure en haut de la page. Elles sont soumises au droit français.</p>
+<p>Voir aussi la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+</main>
+<footer class="bot"><a href="index.html">Accueil</a> · <a href="notice.html">Notice</a> · <a href="evolutions.html">Évolutions</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions.html">Conditions d'utilisation</a><br>Maquettes de fan non officielles · © 2026 Oz-WEB</footer>
+</body></html>

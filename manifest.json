@@ -1,0 +1,9 @@
+{
+  "name": "Oz – Maquettes de jeux",
+  "short_name": "Oz Jeux",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07060f",
+  "theme_color": "#39ff88"
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07060f">
+<title>Oz – Maquettes de jeux</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07060f;--panel:#120f24;--panel2:#1b1736;--neon:#39ff88;--pink:#ff3df0;--cyan:#29e7ff;--yellow:#ffe83d;--txt:#e8e6ff;--dim:#8a85b8;--pix:'Press Start 2P',monospace;--mono:'VT323',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:var(--mono);font-size:20px;min-height:100vh}
+.crt{position:fixed;inset:0;pointer-events:none;z-index:5;background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 1px,transparent 1px 3px)}
+main{max-width:1050px;margin:0 auto;padding:28px 16px 50px;position:relative;z-index:1}
+h1{font-family:var(--pix);font-size:clamp(18px,4.5vw,34px);line-height:1.4;color:var(--neon);text-shadow:0 0 12px var(--neon),4px 4px 0 var(--pink);text-align:center}
+h1 span{color:var(--yellow);text-shadow:0 0 12px var(--yellow),4px 4px 0 var(--pink)}
+.intro{text-align:center;color:var(--cyan);margin:14px auto 26px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{background:var(--panel);border:3px solid var(--panel2);display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-4px);border-color:var(--c,var(--neon))}
+.thumb{height:150px;display:flex;align-items:center;justify-content:center;background:#000;border-bottom:3px solid var(--panel2)}
+.thumb canvas{width:120px;image-rendering:pixelated;filter:drop-shadow(0 0 6px var(--c,var(--neon)))}
+.body{padding:14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card h2{font-family:var(--pix);font-size:12px;line-height:1.5;color:var(--c,var(--neon))}
+.tag{font-family:var(--pix);font-size:8px;padding:5px 6px;white-space:nowrap;color:#000;background:var(--yellow)}
+.tag.ok{background:var(--neon)}.tag.old{background:var(--dim)}
+.desc{color:var(--dim);line-height:1.15}
+.meta{font-size:17px;color:var(--dim)}
+.btn{margin-top:auto;font-family:var(--pix);font-size:11px;text-align:center;text-decoration:none;color:#000;background:var(--c,var(--neon));padding:12px;box-shadow:4px 4px 0 var(--pink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--pink)}
+footer{margin-top:34px;text-align:center;color:var(--dim);font-size:17px;line-height:1.3}
+footer a{color:var(--cyan)}
+header.top{position:sticky;top:0;z-index:4;background:rgba(7,6,15,.95);border-bottom:2px solid var(--panel2)}
+.bar{max-width:1050px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:space-between}
+.brand{font-family:var(--pix);font-size:13px;color:var(--neon);text-decoration:none;text-shadow:0 0 8px var(--neon),3px 3px 0 var(--pink)}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{font-family:var(--pix);font-size:9px;color:var(--dim);text-decoration:none;padding:7px 8px;border:2px solid transparent}
+nav a:hover{color:var(--txt);border-color:var(--panel2)}nav a.on{color:#000;background:var(--yellow)}
+.flinks{margin-top:10px}.flinks a{color:var(--dim);margin:0 6px}
+@media (max-width:620px){nav a{font-size:8px;padding:6px}}
+</style>
+</head>
+<body>
+<div class="crt"></div>
+<header class="top"><div class="bar"><a class="brand" href="index.html">OZ · MAQUETTES</a><nav><a href="index.html" class="on">Accueil</a><a href="notice.html">Notice</a><a href="evolutions.html">Évolutions</a><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions d'utilisation</a></nav></div></header>
+<main>
+  <h1>OZ <span>MAQUETTES</span><br>DE JEUX</h1>
+  <p class="intro">Choisis une maquette pour la tester. Chaque jeu fonctionne dans le navigateur, sur ordinateur comme sur téléphone.</p>
+  <div class="grid" id="grid"></div>
+  <footer>
+    Maquettes de fan non officielles, en cours de test. Les jeux sur le thème des invaders n'ont aucun lien avec l'artiste Invader ni avec l'application Flash Invaders.<br>
+    Données des invaders : <a href="https://github.com/goguelnikov/SpaceInvaders" target="_blank" rel="noopener">Space Invaders World Database</a> (licence MIT).
+    <div class="flinks"><a href="notice.html">Notice</a>·<a href="evolutions.html">Évolutions</a>·<a href="confidentialite.html">Confidentialité</a>·<a href="conditions.html">Conditions d'utilisation</a></div>
+  </footer>
+</main>
+<script>
+/* ===== LISTE DES MAQUETTES =====
+   Pour ajouter un jeu : crée un dossier (ex. mon-jeu/) contenant son index.html,
+   puis ajoute une ligne ici. Statut : "jouable", "en cours" ou "archive".          */
+const MAQUETTES = [
+  { dossier: 'pixel-invaders', titre: 'Pixel Invaders',
+    description: "Rétro arcade + Défis Nature street art : 4\u00a0405 invaders réels, par pays, et ta collection Flash.",
+    statut: 'jouable', couleur: '#39ff88', maj: 'novembre 2026' },
+];
+
+/* petit envahisseur dessiné pour chaque vignette (généré à partir du nom) */
+function sprite(seed, color){
+  let s = 0; for (const ch of seed) s = (s * 31 + ch.charCodeAt(0)) >>> 0;
+  const rnd = () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296);
+  const W = 11, H = 8, cv = document.createElement('canvas'), t = 10;
+  cv.width = W * t; cv.height = H * t; const c = cv.getContext('2d'); c.fillStyle = color;
+  for (let y = 0; y < H; y++) for (let x = 0; x < 6; x++) {
+    const p = .55 - (5 - x) / 6 * .25 + (y > 1 && y < 6 ? .2 : -.1);
+    if (rnd() < p) { c.fillRect(x * t, y * t, t, t); c.fillRect((W - 1 - x) * t, y * t, t, t); }
+  }
+  c.clearRect(3 * t, 3 * t, t, t); c.clearRect((W - 4) * t, 3 * t, t, t);
+  return cv;
+}
+
+const grid = document.getElementById('grid');
+const label = { 'jouable': ['JOUABLE', 'ok'], 'en cours': ['EN COURS', ''], 'archive': ['ARCHIVE', 'old'] };
+MAQUETTES.forEach(m => {
+  const [txt, cls] = label[m.statut] || [m.statut.toUpperCase(), ''];
+  const el = document.createElement('article');
+  el.className = 'card'; el.style.setProperty('--c', m.couleur);
+  el.innerHTML = `<div class="thumb"></div><div class="body">
+    <div class="top"><h2>${m.titre}</h2><span class="tag ${cls}">${txt}</span></div>
+    <p class="desc">${m.description}</p>
+    <p class="meta">Mise à jour : ${m.maj}</p>
+    <a class="btn" href="${m.dossier}/">▶ Jouer</a></div>`;
+  el.querySelector('.thumb').appendChild(sprite(m.dossier, m.couleur));
+  grid.appendChild(el);
+});
+
+/* l'ancienne version installait un service worker à la racine : on le met à jour pour le nettoyer */
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(regs => regs.forEach(r => {
+    if (r.scope.endsWith('/') && !/\/(v1-appli|pixel-invaders)\/$/.test(r.scope)) r.update();
+  })).catch(() => {});
+}
+</script>
+</body>
+</html>

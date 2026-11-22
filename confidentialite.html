@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07060f"><title>Confidentialité – Oz · Maquettes de jeux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07060f;--panel:#120f24;--panel2:#1b1736;--neon:#39ff88;--pink:#ff3df0;--cyan:#29e7ff;--yellow:#ffe83d;--txt:#e8e6ff;--dim:#a29dcc;--pix:'Press Start 2P',monospace;--mono:'VT323',monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:var(--mono);font-size:21px;line-height:1.35;min-height:100vh}
+.crt{position:fixed;inset:0;pointer-events:none;z-index:5;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px)}
+header.top{position:sticky;top:0;z-index:4;background:rgba(7,6,15,.95);border-bottom:2px solid var(--panel2)}
+.bar{max-width:1050px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:space-between}
+.brand{font-family:var(--pix);font-size:13px;color:var(--neon);text-decoration:none;text-shadow:0 0 8px var(--neon),3px 3px 0 var(--pink)}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{font-family:var(--pix);font-size:9px;color:var(--dim);text-decoration:none;padding:7px 8px;border:2px solid transparent}
+nav a:hover{color:var(--txt);border-color:var(--panel2)}
+nav a.on{color:#000;background:var(--yellow)}
+main{max-width:900px;margin:0 auto;padding:26px 16px 50px;position:relative;z-index:1}
+main.wide{max-width:1050px}
+h1{font-family:var(--pix);font-size:clamp(16px,3.6vw,26px);line-height:1.5;color:var(--neon);text-shadow:0 0 10px var(--neon),3px 3px 0 var(--pink);margin-bottom:8px}
+.sub{color:var(--cyan);margin-bottom:22px}
+h2{font-family:var(--pix);font-size:13px;line-height:1.6;color:var(--yellow);margin:28px 0 10px}
+h3{font-family:var(--pix);font-size:10px;line-height:1.6;color:var(--cyan);margin:18px 0 6px}
+p{margin:8px 0}
+ul,ol{margin:8px 0 8px 26px}li{margin:4px 0}
+a{color:var(--cyan)}
+b,strong{color:#fff}
+.box{background:var(--panel);border:2px solid var(--panel2);padding:14px 16px;margin:14px 0}
+.box.ok{border-color:var(--neon)}.box.warn{border-color:var(--yellow)}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:19px}
+th,td{border:1px solid var(--panel2);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--panel2);font-family:var(--pix);font-size:9px;color:var(--yellow)}
+.toc{columns:2;column-gap:24px}
+.ver{border-left:4px solid var(--neon);padding:4px 0 4px 14px;margin:18px 0}
+.ver .d{font-family:var(--pix);font-size:9px;color:var(--dim)}
+.tag{font-family:var(--pix);font-size:8px;padding:3px 5px;margin-right:4px;color:#000;background:var(--neon)}
+.tag.f{background:var(--cyan)}.tag.c{background:var(--yellow)}.tag.r{background:var(--pink)}
+footer.bot{border-top:2px solid var(--panel2);text-align:center;padding:18px 12px 28px;color:var(--dim);font-size:17px;position:relative;z-index:1}
+footer.bot a{color:var(--dim);margin:0 6px}
+@media (max-width:620px){.toc{columns:1}nav a{font-size:8px;padding:6px}}
+</style></head><body><div class="crt"></div>
+<header class="top"><div class="bar"><a class="brand" href="index.html">OZ · MAQUETTES</a><nav><a href="index.html">Accueil</a><a href="notice.html">Notice</a><a href="evolutions.html">Évolutions</a><a href="confidentialite.html" class="on">Confidentialité</a><a href="conditions.html">Conditions d'utilisation</a></nav></div></header>
+<main>
+<h1>CONFIDENTIALITÉ</h1><p class="sub">Politique de confidentialité · mise à jour le 22 novembre 2026</p>
+<div class="box ok"><b>En bref</b> : pas de compte, pas de serveur, pas de publicité, pas de mesure d'audience, pas de cookie. Tes données restent dans ton navigateur ; l'éditeur n'y a pas accès.</div>
+
+<h2>1. QUI EST RESPONSABLE ?</h2>
+<p>Le site est édité par Oz-WEB (Christophe VIDAL), à titre non commercial. Contact : <a href="mailto:ozvitrine@gmail.com">ozvitrine@gmail.com</a>.</p>
+
+<h2>2. CE QUI EST ENREGISTRÉ, ET OÙ</h2>
+<p>Tout est stocké <b>localement</b>, dans ton navigateur (stockage local et IndexedDB). Rien n'est envoyé à l'éditeur.</p>
+<table><tr><th>Donnée</th><th>Utilité</th></tr>
+<tr><td>Invaders flashés, dates de tes imports</td><td>Ta collection, la formule 2.2, la vérification des invaders détruits</td></tr>
+<tr><td>Vignettes de ta galerie (si tu coches l'option)</td><td>Afficher ta photo sur tes cartes</td></tr>
+<tr><td>Réponses « avant / après », corrections « vu intact »</td><td>Ta progression et tes corrections</td></tr>
+<tr><td>Image de ton dos de cartes (si tu en choisis une)</td><td>Personnaliser le dos de tes cartes</td></tr>
+<tr><td>Préférences (son, difficulté, style de jeu, nombre de tours et de cartes), meilleur score, statistiques de parties</td><td>Le confort de jeu</td></tr>
+<tr><td>Copie de la dernière base des invaders et son historique</td><td>Jouer hors connexion, suivre les mises à jour</td></tr></table>
+
+<h2>3. TES VIDÉOS ET CAPTURES</h2>
+<p>Les vidéos et captures de ta galerie Flash Invaders sont analysées <b>dans ton navigateur</b>. Elles ne sont ni envoyées, ni conservées : seuls les codes reconnus et, si tu le demandes, les vignettes sont gardés sur ton appareil.</p>
+
+<h2>4. SERVICES TIERS</h2>
+<p>Certaines fonctions contactent des services extérieurs, qui reçoivent alors ton adresse IP et les informations techniques habituelles de ton navigateur :</p>
+<table><tr><th>Service</th><th>Quand</th><th>Pourquoi</th></tr>
+<tr><td>GitHub (hébergement du site, GitHub Pages)</td><td>À chaque visite</td><td>Afficher le site</td></tr>
+<tr><td>GitHub (API et fichiers du dépôt de la base)</td><td>Au plus une fois toutes les 12 h</td><td>Vérifier les mises à jour de la base</td></tr>
+<tr><td>Google Fonts</td><td>À chaque visite</td><td>Polices d'écriture rétro</td></tr>
+<tr><td>Google Maps, OpenStreetMap, Instagram, Flickr, Google Recherche</td><td>Seulement si tu touches le lien</td><td>Voir un invader sur ces sites</td></tr>
+<tr><td>GitHub (formulaire de signalement)</td><td>Seulement si tu touches « Envoyer la correction »</td><td>Signaler une erreur de la base</td></tr></table>
+<p>Ces services appliquent leur propre politique de confidentialité. Un signalement envoyé sur GitHub est <b>public</b> et associé à ton compte GitHub.</p>
+
+<h2>5. EFFACER TES DONNÉES</h2>
+<ul><li>Dans le jeu : « Tout effacer » (flashs) et « 🗑 Effacer mes vignettes », dans ⚡ Mes flashs.</li>
+<li>Tout effacer d'un coup : supprime les données de ce site dans les réglages de ton navigateur.</li></ul>
+
+<h2>6. TES DROITS</h2>
+<p>L'éditeur ne collecte et ne détient aucune donnée personnelle te concernant : il n'a donc rien à te communiquer, rectifier ou supprimer. Pour toute question : <a href="mailto:ozvitrine@gmail.com">ozvitrine@gmail.com</a>. Tu peux aussi saisir la CNIL (cnil.fr).</p>
+
+<h2>7. MODIFICATIONS</h2>
+<p>Cette politique peut évoluer avec le site ; la date de mise à jour figure en haut de la page.</p>
+</main>
+<footer class="bot"><a href="index.html">Accueil</a> · <a href="notice.html">Notice</a> · <a href="evolutions.html">Évolutions</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="conditions.html">Conditions d'utilisation</a><br>Maquettes de fan non officielles · © 2026 Oz-WEB</footer>
+</body></html>
